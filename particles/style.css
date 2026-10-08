@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import "https://unpkg.com/ress/dist/ress.min.css";
+* {
+  box-sizing: border-box;
+}
+
+/*===== レイアウトのためのCSS =====*/
+
+html,
+body {
+  /*高さを100%にして描画エリアをとる*/
+  height: 100%;
+}
+
+#wrapper {
+  /*描画を#particles.jsより上にするため*/
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+/*===== particle.jsのエリア設定 =====*/
+
+#particles-js {
+  /*描画固定*/
+  position: fixed;
+  /*描画を一番下に*/
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  /*背景色*/
+  background-color: #070a31;
+}

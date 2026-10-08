@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+h1 {
+    text-align: center;
+}
+
+.left-box,
+.right-box,
+.center-box {
+    width: 500px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.left-box figure {
+    float: left;
+    margin: 0 16px 16px 0;
+}
+
+.right-box figure {
+    float: right;
+    margin: 0 0 16px 16px;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    border: 1px solid #666;
+}
+
+p {
+    margin: 0;
+    line-height: 1.8;
+}
